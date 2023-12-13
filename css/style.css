@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+
+:root {
+    --warnaBiru: #0f0e17;
+    --warnaPutih: #fffffe;
+    --warnaKuning: #ff8906;
+    --warnaAbu: #a7a9be;
+    --warnaPink: #e53170;
+}
+
+section {
+    padding: 0 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    background-color: var(--warnaBiru);
+}
+
+/* navbar */
+nav {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav .nav-logo h1 {
+    font-size: 25px;
+}
+
+nav .nav-item {
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+/* akhir navbar */
+
+/* home */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#home .kiri {
+    flex: 1.5;
+}
+
+#home .kiri h3 {
+    font-size: 30px;
+    color: var(--warnaKuning);
+}
+
+#home .kiri h1 {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-size: 60px;
+    color: var(--warnaPutih);
+}
+
+#home .kiri h2 {
+    font-size: 40px;
+    color: var(--warnaAbu);
+}
+
+#home .kanan {
+    flex: 1;
+    display: grid;
+    place-items: center;
+}
+
+#home .kanan img {
+    width: 80%;
+}
+/* akhir home */
+
+/* about */
+#about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+#about .kiri {
+    flex: 1;
+}
+
+#about .kiri .box-gambar {
+    width: 100%;
+    height: 450px;
+    background-color: var(--warnaPutih);
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+}
+
+#about .kiri img {
+    width: 70%;
+    transform: translateX(-10px);
+}
+
+#about .kanan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about .kanan h1 {
+    color: var(--warnaPutih);
+    font-size: 40px;
+}
+
+#about .kanan p {
+    font-size: 18px;
+    color: var(--warnaAbu);
+    text-align: justify;
+}
+/* akhir about */
+
+/* project */
+#project {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 550px;
+    margin-top: 80px;
+}
+
+#project h1 {
+    color: var(--warnaPutih);
+    text-align: center;
+    font-size: 40px;
+}
+
+#project .wrapper {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+#project .wrapper .item {
+    display: flex;
+    flex: 1;
+    background-color: var(--warnaPutih);
+    height: 350px;
+    border-radius: 20px;
+}
+
+#project .wrapper .item {
+    text-decoration: none;
+    color: var(--warnaKuning);
+    background-position: center;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 2px solid var(--warnaPutih);
+}
+
+#project .wrapper .item .overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: grid;
+    place-items: center;
+}
+
+#project .wrapper .item .overlay span {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+#project .wrapper .item:first-child {
+    background-image: url("../imgs/project-1.png");
+}
+
+#project .wrapper .item:nth-child(2) {
+    background-image: url("../imgs/project-2.png");
+}
+/* akhir project */
+
+/* skills */
+#skills {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#skills h1 {
+    font-size: 40px;
+    color: var(--warnaPutih);
+    text-align: center;
+}
+
+#skills .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#skills .wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 900px;
+    flex-wrap: wrap;
+}
+
+#skills .wrapper .item .atas {
+    background-color: var(--warnaPutih);
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+}
+
+#skills .wrapper .item .atas img {
+    width: 65%;
+}
+
+#skills .wrapper .item .atas img[src="imgs/js.png"] {
+    width: 100%;
+}
+
+#skills .wrapper .item .atas img[src="imgs/php.png"] {
+    width: 85%;
+}
+
+#skills .wrapper .item .bawah {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--warnaAbu);
+    font-weight: 600;
+}
+/* akhir skills */
+
+/* contact */
+#contact {
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contact h1 {
+    font-size: 40px;
+    color: var(--warnaPutih);
+    text-align: center;
+}
+
+#contact .wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#contact .wrapper .item:first-child,
+#contact .wrapper .item:last-child {
+    background-color: var(--warnaKuning);
+}
+
+#contact .wrapper .item:nth-child(2) {
+    background-color: var(--warnaPutih);
+}
+
+#contact .wrapper .item {
+    text-decoration: none;
+    flex: 1;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#contact .wrapper .item .kiri {
+    display: grid;
+    place-items: center;
+}
+
+#contact .wrapper .item .kanan {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .wrapper .item .kanan span {
+    color: var(--warnaPutih);
+    font-weight: 600;
+}
+
+#contact .wrapper .item:nth-child(2) .kanan span {
+    color: var(--warnaPink);
+}
+/* akhir contact */
+
+/* footer */
+footer {
+    margin-top: 80px;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+footer span span {
+    color: red;
+}
+/* akhir footer */
