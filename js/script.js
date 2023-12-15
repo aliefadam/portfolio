@@ -6,9 +6,6 @@ const item = document.querySelector(".nav-item");
 
 hamburger.addEventListener("click", () => {
     item.classList.toggle("active");
-    // setTimeout(() => {
-    //     item.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
-    // }, 500);
 });
 
 document.addEventListener("click", (e) => {
