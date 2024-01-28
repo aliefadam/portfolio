@@ -43,7 +43,7 @@ const dataProject = [
         logo: "wedding.png",
         preview: ["wedding-home.png", "wedding-bundle.png"],
         deskripsi:
-            "Situs ini merupakan hasil rancangan dan pengembangan saya menggunakan HTML dan CSS, dengan fokus menyajikan informasi lengkap mengenai berbagai paket pernikahan, didukung oleh galeri hasil pernikahan sebagai sumber inspirasi. Desain elegan dan profesional situs ini mencerminkan kreativitas, sementara tujuannya adalah memberikan panduan yang jelas bagi calon pengantin untuk memilih paket pernikahan yang sesuai dengan keinginan mereka.",
+            "This site, designed and developed by me using HTML and CSS, focuses on providing comprehensive information about various wedding packages, supported by a gallery of wedding results as a source of inspiration. The site's elegant and professional design reflects creativity, while the goal is to provide clear guidance for brides-to-be to choose a wedding package that suits them.",
         url: "https://hati-kita.netlify.app/",
     },
     {
@@ -52,17 +52,17 @@ const dataProject = [
         logo: "korea.png",
         preview: ["resepjoss-home.png", "resepjoss-detail.png"],
         deskripsi:
-            "Situs ini dibangun menggunakan HTML dan CSS, menghasilkan tampilan yang menarik dan bersih. Terdapat dua halaman unik yang memberikan informasi komprehensif tentang makanan Korea. Halaman pertama memberikan gambaran umum tentang keanekaragaman kuliner Korea dengan daftar makanan yang tersedia. Halaman kedua menawarkan rincian mendalam mengenai setiap hidangan, mencakup asal, bahan-bahan, dan cara penyajian. Desain responsif memastikan kenyamanan pengguna di berbagai perangkat, memudahkan pengunjung untuk menjelajahi dan menikmati informasi. Selain memuaskan selera kuliner, situs ini juga memperkenalkan budaya kuliner Korea dengan cara yang menarik dan informatif, termasuk menampilkan resep dan cara pembuatannya.",
+            "The site was built using HTML and CSS, resulting in an attractive and clean look. There are two unique pages that provide comprehensive information about Korean food. The first page provides an overview of Korea's culinary diversity with a list of available foods. The second page offers in-depth details about each dish, including its origin, ingredients, and how it is served. The responsive design ensures user convenience across various devices, making it easy for visitors to explore and enjoy the information. In addition to satisfying culinary appetites, the site also introduces Korean culinary culture in an engaging and informative way, including featuring recipes and how they are made.",
         url: "https://resep-joss.netlify.app/",
     },
     {
-        jenis: "Login Page",
-        nama: "Login Page",
-        logo: "login.png",
-        preview: ["login-home.png", ""],
+        jenis: "Coffee Website",
+        nama: "KOPI RAKYAT",
+        logo: "coffee-maker.png",
+        preview: ["kopi-rakyat-home.png", "kopi-rakyat-product.png"],
         deskripsi:
-            "Situs ini saya kembangkan menggunakan HTML dan CSS dengan fokus pada elemen front-end, khususnya menciptakan tampilan halaman login yang bersih dan sederhana. Meskipun tidak memiliki fungsi back-end, halaman login ini dirancang agar user-friendly, memudahkan penggunaan tanpa kerumitan. Desain minimalis memastikan navigasi yang intuitif, memudahkan pengguna untuk masuk dengan cepat. Meskipun hanya front-end, perhatian terhadap detail menciptakan antarmuka yang menarik dan profesional. Keunggulan desain yang sederhana juga membuatnya mudah diintegrasikan dengan berbagai platform atau sistem back-end yang berbeda. Situs ini didesain untuk memberikan pengalaman pengguna efisien dalam masuk tanpa memerlukan fungsi back-end tambahan.",
-        url: "https://aliefadam-login-page.netlify.app/",
+            "This site, designed and developed by me using HTML, CSS, and Javascript, presents a comprehensive catalog of quality coffee available for sale. Each coffee variant is accompanied by detailed information, including its flavor, and unique characteristics. The user-friendly interface ensures easy navigation and a pleasant shopping experience. Users can explore different types of coffee to find a flavor that suits their preferences. The diversity of products and responsive design create an exciting atmosphere for coffee lovers to explore and choose the best coffee.",
+        url: "https://kopi-rakyat.netlify.app/",
     },
     {
         jenis: "Course Website",
@@ -70,7 +70,7 @@ const dataProject = [
         logo: "course.png",
         preview: ["geek_tutors-home.png", "geek_tutors-courses.png"],
         deskripsi:
-            "Situs ini dirancang dan dikembangkan oleh saya menggunakan PHP dan database MySQL, memberikan pengalaman belajar yang dinamis. Menyajikan kelas-kelas tentang HTML dan CSS dengan materi yang terstruktur dan mudah dimengerti, platform ini juga menyertakan latihan pembuatan website untuk meningkatkan keterampilan praktis dan pengalaman langsung dalam pengembangan web. Sistem database MySQL digunakan untuk melacak kemajuan peserta, memberikan pengalaman belajar yang disesuaikan. Desain antarmuka yang ramah pengguna memastikan navigasi yang intuitif, memudahkan pengguna untuk menjelajahi materi kursus dan latihan. Tujuan utama platform ini adalah memberikan pendekatan pembelajaran interaktif dan mendalam, mendukung para pelajar dalam mengembangkan keterampilan mereka dalam dunia pengembangan web.",
+            "This site was designed and developed by me using PHP and MySQL database, providing a dynamic learning experience. Presenting classes on HTML and CSS with structured and easy-to-understand material, the platform also includes website building exercises to enhance practical skills and hands-on experience in web development. A MySQL database system is used to track participants' progress, providing a customized learning experience. The user-friendly interface design ensures intuitive navigation, making it easy for users to explore the course material and exercises. The main goal of the platform is to provide an interactive and immersive learning approach, supporting learners in developing their skills in the world of web development.",
         url: "http://geek-tutors.rf.gd/",
     },
 ];

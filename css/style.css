@@ -250,21 +250,20 @@ nav .nav-hamburger span {
     /* height: 70vh; */
     background-color: var(--warnaBiru);
     border-radius: 15px;
-    padding: 25px;
-    gap: 20px;
+    padding: 25px 40px;
     border: 2px solid var(--warnaPutih);
     position: relative;
 }
 
 .overlay-detail-project .detail .scroll {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .overlay-detail-project .detail .close {
     position: absolute;
-    right: -10px;
-    top: -10px;
+    right: -12px;
+    top: -12px;
     background-color: var(--warnaPutih);
     width: 40px;
     height: 40px;
@@ -305,6 +304,8 @@ nav .nav-hamburger span {
 .overlay-detail-project .detail .left img {
     width: 100%;
     border-radius: 10px;
+    /* border: 1px solid var(--warnaKuning); */
+    /* box-shadow: 1px 1px 10px 2px rgba(255, 255, 255, 0.5); */
 }
 
 .overlay-detail-project .detail .right {
@@ -609,6 +610,10 @@ footer span span {
         font-size: 20px;
     }
 
+    .overlay-detail-project .detail {
+        padding: 25px;
+    }
+
     .overlay-detail-project .detail .scroll {
         height: 70vh;
         overflow: scroll;
@@ -625,12 +630,13 @@ footer span span {
     }
 
     .overlay-detail-project .detail .right h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .overlay-detail-project .detail .right p {
-        font-size: 10px;
+        font-size: 15px;
         margin-top: 5px;
+        text-align: left;
     }
 
     .overlay-detail-project .detail .right a {
