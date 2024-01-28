@@ -86,7 +86,7 @@ dataProject.forEach((project) => {
     desc.classList.add("desc");
     desc.innerHTML = project["jenis"];
     box.classList.add("box");
-    img.src = "imgs/" + project["logo"];
+    img.srcset = "imgs/" + project["logo"];
     box.append(img);
     containerItem.append(box);
     containerItem.append(desc);
