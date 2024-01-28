@@ -5,12 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio Website</title>
         <link rel="stylesheet" href="css/style.css" />
+
+        <!-- boostrap icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
     </head>
     <body>
         <!-- navbar -->
         <nav>
             <div class="nav-logo">
-                <h1>Alief Adam</h1>
+                <a href="#home">Alief Adam</a>
             </div>
             <div class="nav-item">
                 <a href="#home">Home</a>
@@ -63,32 +69,28 @@
         <section id="project">
             <h1>My Project</h1>
             <div class="wrapper">
-                <a target="_blank" href="https://hati-kita.netlify.app/" class="item">
-                    <div class="box">
-                        <img src="imgs/wedding.png" alt="" />
-                    </div>
-                    <div class="desc">Wedding Package Website</div>
-                </a>
-                <a target="_blank" href="https://resep-joss.netlify.app/" class="item">
-                    <div class="box">
-                        <img src="imgs/korea.png" alt="" />
-                    </div>
-                    <div class="desc">Korean Food website</div>
-                </a>
-                <a target="_blank" href="https://aliefadam-login-page.netlify.app/" class="item">
-                    <div class="box">
-                        <img src="imgs/login.png" alt="" />
-                    </div>
-                    <div class="desc">Login Page</div>
-                </a>
-                <a target="_blank" href="http://geek-tutors.rf.gd/" class="item">
-                    <div class="box">
-                        <img src="imgs/course.png" alt="" />
-                    </div>
-                    <div class="desc">Course Website</div>
-                </a>
+                <!-- data ditampilkan dari javascript -->
             </div>
         </section>
+
+        <div class="overlay-detail-project">
+            <div class="detail">
+                <div class="close">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <div class="scroll">
+                    <div class="left">
+                        <img src="" alt="" />
+                        <img src="" alt="" />
+                    </div>
+                    <div class="right">
+                        <h1></h1>
+                        <p></p>
+                        <a target="_blank" href="https://hati-kita.netlify.app">Kunjungi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- akhir project -->
 
         <!-- skills -->
@@ -179,7 +181,7 @@
             <div class="wrapper">
                 <a target="_blank" href="mailto:aliefadam6@gmail.com" class="item">
                     <div class="kiri">
-                        <img src="imgs/gmail.png" alt="" />
+                        <img src="imgs/gmail-logo.png" alt="" />
                     </div>
                     <div class="kanan">
                         <span>GMAIL</span>
@@ -197,7 +199,7 @@
                 </a>
                 <a target="_blank" href="https://github.com/aliefadam" class="item">
                     <div class="kiri">
-                        <img src="imgs/github.png" alt="" />
+                        <img src="imgs/github-sign.png" alt="" />
                     </div>
                     <div class="kanan">
                         <span>GITHUB</span>

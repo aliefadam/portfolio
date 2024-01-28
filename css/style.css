@@ -28,6 +28,7 @@ html,
 body {
     font-family: "Poppins", sans-serif !important;
     background-color: var(--warnaBiru);
+    position: relative;
 }
 
 /* navbar */
@@ -46,8 +47,17 @@ nav {
     /* background-color: rgba(0, 0, 0, 1); */
 }
 
-nav .nav-logo h1 {
+nav .nav-logo a {
     font-size: 25px;
+    text-decoration: none;
+    color: var(--warnaPutih);
+    font-weight: 600;
+    font-size: 30px;
+    transition: 300ms;
+}
+
+nav .nav-logo a:hover {
+    color: var(--warnaKuning);
 }
 
 nav .nav-item {
@@ -59,6 +69,11 @@ nav .nav-item a {
     text-decoration: none;
     color: white;
     font-size: 17px;
+    transition: 300ms;
+}
+
+nav .nav-item a:hover {
+    color: var(--warnaKuning);
 }
 
 nav .nav-hamburger {
@@ -191,6 +206,7 @@ nav .nav-hamburger span {
     text-decoration: none;
     color: var(--warnaAbu);
     transition: 300ms;
+    cursor: pointer;
 }
 
 #project .wrapper .item:hover {
@@ -214,6 +230,107 @@ nav .nav-hamburger span {
     margin-top: 15px;
     text-align: center;
     font-size: 18px;
+}
+
+.overlay-detail-project {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-detail-project .detail {
+    width: 80%;
+    /* height: 70vh; */
+    background-color: var(--warnaBiru);
+    border-radius: 15px;
+    padding: 25px;
+    gap: 20px;
+    border: 2px solid var(--warnaPutih);
+    position: relative;
+}
+
+.overlay-detail-project .detail .scroll {
+    display: flex;
+    gap: 20px;
+}
+
+.overlay-detail-project .detail .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: var(--warnaPutih);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 300ms;
+    border: 2px solid transparent;
+}
+
+.overlay-detail-project .detail .close i {
+    display: flex;
+    font-size: 20px;
+    color: var(--warnaBiru);
+    text-shadow: 0 0 1px 10px var(--warnaBiru);
+    transition: 300ms;
+}
+
+.overlay-detail-project .detail .close:hover {
+    border: 2px solid var(--warnaPutih);
+    background-color: var(--warnaBiru);
+}
+
+.overlay-detail-project .detail .close:hover i {
+    color: var(--warnaPutih);
+}
+
+.overlay-detail-project .detail .left {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.overlay-detail-project .detail .left img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.overlay-detail-project .detail .right {
+    flex: 4;
+}
+
+.overlay-detail-project .detail .right h1 {
+    color: var(--warnaKuning);
+}
+
+.overlay-detail-project .detail .right p {
+    color: var(--warnaPutih);
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.overlay-detail-project .detail .right a {
+    text-decoration: none;
+    color: var(--warnaBiru);
+    margin-top: 15px;
+    display: block;
+    width: fit-content;
+    padding: 7px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: var(--warnaKuning);
 }
 
 /* akhir project */
@@ -246,7 +363,6 @@ nav .nav-hamburger span {
 }
 
 #skills .wrapper .item {
-    /* border: 1px solid red; */
     animation: gerakAtasBawah 5000ms infinite;
 }
 
@@ -354,13 +470,18 @@ nav .nav-hamburger span {
     place-items: center;
 }
 
+#contact .wrapper .item .kiri img {
+    /* width: 50%; */
+    width: 70px;
+}
+
 #contact .wrapper .item .kanan {
     display: flex;
     flex-direction: column;
 }
 
 #contact .wrapper .item .kanan span {
-    color: var(--warnaPutih);
+    color: var(--warnaBiru);
     font-weight: 600;
 }
 
@@ -411,8 +532,8 @@ footer span span {
         display: flex;
     }
 
-    nav .nav-logo h1 {
-        font-size: 20px;
+    nav .nav-logo a {
+        font-size: 25px;
     }
 
     #home {
@@ -488,6 +609,34 @@ footer span span {
         font-size: 20px;
     }
 
+    .overlay-detail-project .detail .scroll {
+        height: 70vh;
+        overflow: scroll;
+        flex-direction: column;
+    }
+
+    .overlay-detail-project .detail .close {
+        width: 35px;
+        height: 35px;
+    }
+
+    .overlay-detail-project .detail .close i {
+        font-size: 15px;
+    }
+
+    .overlay-detail-project .detail .right h1 {
+        font-size: 20px;
+    }
+
+    .overlay-detail-project .detail .right p {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .overlay-detail-project .detail .right a {
+        font-size: 13px;
+    }
+
     #skills {
         margin-top: 20px;
         padding-left: 20px;
@@ -524,7 +673,36 @@ footer span span {
         transform: scale(1.03);
     }
 
+    #contact .wrapper .item .kiri img {
+        /* width: 50%; */
+        width: 60px;
+    }
+
     footer span {
         font-size: 12px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
     }
 }
