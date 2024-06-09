@@ -5,92 +5,106 @@ const span3 = hamburger.querySelector("span:last-child");
 const item = document.querySelector(".nav-item");
 
 hamburger.addEventListener("click", () => {
-    item.classList.toggle("active");
+  item.classList.toggle("active");
 });
 
 document.addEventListener("click", (e) => {
-    if (e.target !== hamburger && e.target !== span1 && e.target !== span2 && e.target !== span3) {
-        item.classList.remove("active");
-    }
+  if (
+    e.target !== hamburger &&
+    e.target !== span1 &&
+    e.target !== span2 &&
+    e.target !== span3
+  ) {
+    item.classList.remove("active");
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".nav-item a");
+  const navLinks = document.querySelectorAll(".nav-item a");
 
-    navLinks.forEach(function (link) {
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
 
-            const targetId = this.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
+      const targetId = this.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                const targetOffset = targetElement.offsetTop - 100;
+      if (targetElement) {
+        const targetOffset = targetElement.offsetTop - 100;
 
-                window.scroll({
-                    top: targetOffset,
-                    behavior: "smooth",
-                });
-            }
+        window.scroll({
+          top: targetOffset,
+          behavior: "smooth",
         });
+      }
     });
+  });
 });
 
 const dataProject = [
-    {
-        jenis: "Wedding Package Website",
-        nama: "Hati Kita",
-        logo: "wedding.png",
-        preview: ["wedding-home.png", "wedding-bundle.png"],
-        deskripsi:
-            "This site, designed and developed by me using HTML and CSS, focuses on providing comprehensive information about various wedding packages, supported by a gallery of wedding results as a source of inspiration. The site's elegant and professional design reflects creativity, while the goal is to provide clear guidance for brides-to-be to choose a wedding package that suits them.",
-        url: "https://hati-kita.netlify.app/",
-    },
-    {
-        jenis: "Korean Food Website",
-        nama: "Resep Joss",
-        logo: "korea.png",
-        preview: ["resepjoss-home.png", "resepjoss-detail.png"],
-        deskripsi:
-            "The site was built using HTML and CSS, resulting in an attractive and clean look. There are two unique pages that provide comprehensive information about Korean food. The first page provides an overview of Korea's culinary diversity with a list of available foods. The second page offers in-depth details about each dish, including its origin, ingredients, and how it is served. The responsive design ensures user convenience across various devices, making it easy for visitors to explore and enjoy the information. In addition to satisfying culinary appetites, the site also introduces Korean culinary culture in an engaging and informative way, including featuring recipes and how they are made.",
-        url: "https://resep-joss.netlify.app/",
-    },
-    {
-        jenis: "Coffee Website",
-        nama: "KOPI RAKYAT",
-        logo: "coffee-maker.png",
-        preview: ["kopi-rakyat-home.png", "kopi-rakyat-product.png"],
-        deskripsi:
-            "This site, designed and developed by me using HTML, CSS, and Javascript, presents a comprehensive catalog of quality coffee available for sale. Each coffee variant is accompanied by detailed information, including its flavor, and unique characteristics. The user-friendly interface ensures easy navigation and a pleasant shopping experience. Users can explore different types of coffee to find a flavor that suits their preferences. The diversity of products and responsive design create an exciting atmosphere for coffee lovers to explore and choose the best coffee.",
-        url: "https://kopi-rakyat.netlify.app/",
-    },
-    {
-        jenis: "Course Website",
-        nama: "Geek Tutors",
-        logo: "course.png",
-        preview: ["geek_tutors-home.png", "geek_tutors-courses.png"],
-        deskripsi:
-            "This site was designed and developed by me using PHP and MySQL database, providing a dynamic learning experience. Presenting classes on HTML and CSS with structured and easy-to-understand material, the platform also includes website building exercises to enhance practical skills and hands-on experience in web development. A MySQL database system is used to track participants' progress, providing a customized learning experience. The user-friendly interface design ensures intuitive navigation, making it easy for users to explore the course material and exercises. The main goal of the platform is to provide an interactive and immersive learning approach, supporting learners in developing their skills in the world of web development.",
-        url: "http://geek-tutors.rf.gd/",
-    },
+  {
+    jenis: "Wedding Package Website",
+    nama: "Hati Kita",
+    logo: "wedding.png",
+    preview: ["wedding-home.png", "wedding-bundle.png"],
+    deskripsi:
+      "This site, designed and developed by me using React.js and TailwindCSS, focuses on providing comprehensive information about various wedding packages, supported by a gallery of wedding results as a source of inspiration. The site's elegant and professional design reflects creativity, while the goal is to provide clear guidance for brides-to-be to choose a wedding package that suits them.",
+    url: "https://hati-kita.netlify.app/",
+  },
+  {
+    jenis: "Weather Forecast Website",
+    nama: "Weather Forecast Website",
+    logo: "cloudy.png",
+    preview: ["cuaca-home.png", "cuaca-search.png"],
+    deskripsi:
+      "The Weather Forecast Website is a dynamic web application designed to provide users with real-time weather information. Built using HTML, TailwindCSS, JavaScript, and jQuery, the site leverages the OpenWeatherMap API to fetch and display weather data such as current temperature, weather conditions, humidity levels, and wind speed for any searched location. The user-friendly interface allows users to search for weather information by entering the name of a city or location, ensuring a seamless experience across different devices. This project showcases my ability to integrate third-party APIs and create interactive web applications with a focus on user experience and responsive design.",
+    url: "https://aliefadam-website-cuaca.netlify.app/",
+  },
+  {
+    jenis: "Human Resource Information System",
+    nama: "HRIS DB Klik",
+    logo: "human-resources.png",
+    preview: ["hris-login.png", "hris-perizinan.png"],
+    deskripsi:
+      "The HRIS DB Klik is a comprehensive web application developed to manage employee data at CV. DB Klik, where I completed my internship. This project, built using Laravel, TailwindCSS, jQuery, and MySQL, provides a robust platform for efficiently handling various HR functions. Key features include employee data management, leave permissions, catering management, and KPI tracking. Developed during my internship, this project demonstrates my ability to create sophisticated web applications that streamline HR processes and enhance operational efficiency.",
+    url: "https://github.com/aliefadam/hris-dbklik-temp",
+  },
+  {
+    jenis: "Coffee Website",
+    nama: "KOPI RAKYAT",
+    logo: "coffee-maker.png",
+    preview: ["kopi-rakyat-home.png", "kopi-rakyat-product.png"],
+    deskripsi:
+      "This site, designed and developed by me using HTML, CSS, and Javascript, presents a comprehensive catalog of quality coffee available for sale. Each coffee variant is accompanied by detailed information, including its flavor, and unique characteristics. The user-friendly interface ensures easy navigation and a pleasant shopping experience. Users can explore different types of coffee to find a flavor that suits their preferences. The diversity of products and responsive design create an exciting atmosphere for coffee lovers to explore and choose the best coffee.",
+    url: "https://kopi-rakyat.netlify.app/",
+  },
+  {
+    jenis: "Course Website",
+    nama: "Geek Tutors",
+    logo: "course.png",
+    preview: ["geek_tutors-home.png", "geek_tutors-courses.png"],
+    deskripsi:
+      "This site was designed and developed by me using PHP and MySQL database, providing a dynamic learning experience. Presenting classes on HTML and CSS with structured and easy-to-understand material, the platform also includes website building exercises to enhance practical skills and hands-on experience in web development. A MySQL database system is used to track participants' progress, providing a customized learning experience. The user-friendly interface design ensures intuitive navigation, making it easy for users to explore the course material and exercises. The main goal of the platform is to provide an interactive and immersive learning approach, supporting learners in developing their skills in the world of web development.",
+    url: "https://github.com/aliefadam/project-eas-mm",
+  },
 ];
 
 dataProject.forEach((project) => {
-    const wrapper = document.querySelector("#project .wrapper");
-    const containerItem = document.createElement("div");
-    const box = document.createElement("div");
-    const img = document.createElement("img");
-    const desc = document.createElement("div");
+  const wrapper = document.querySelector("#project .wrapper");
+  const containerItem = document.createElement("div");
+  const box = document.createElement("div");
+  const img = document.createElement("img");
+  const desc = document.createElement("div");
 
-    containerItem.classList.add("item");
-    desc.classList.add("desc");
-    desc.innerHTML = project["jenis"];
-    box.classList.add("box");
-    img.srcset = "imgs/" + project["logo"];
-    box.append(img);
-    containerItem.append(box);
-    containerItem.append(desc);
-    wrapper.append(containerItem);
+  containerItem.classList.add("item");
+  desc.classList.add("desc");
+  desc.innerHTML = project["jenis"];
+  box.classList.add("box");
+  img.srcset = "imgs/" + project["logo"];
+  box.append(img);
+  containerItem.append(box);
+  containerItem.append(desc);
+  wrapper.append(containerItem);
 });
 
 const containerItems = document.querySelectorAll("#project .wrapper .item");
@@ -104,20 +118,20 @@ const link = overlayDetail.querySelector(".detail .right a");
 const btnClose = overlayDetail.querySelector(".close");
 
 containerItems.forEach((item, index) => {
-    item.addEventListener("click", () => {
-        namaProject.innerHTML = dataProject[index]["nama"];
-        deskripsiProject.innerHTML = dataProject[index]["deskripsi"];
-        preview1.src = "imgs/" + dataProject[index]["preview"][0];
-        preview2.src = "imgs/" + dataProject[index]["preview"][1];
-        link.href = dataProject[index]["url"];
-        overlayDetail.style.display = "flex";
-        detailItem.style.animation = "500ms fadeIn forwards";
-    });
+  item.addEventListener("click", () => {
+    namaProject.innerHTML = dataProject[index]["nama"];
+    deskripsiProject.innerHTML = dataProject[index]["deskripsi"];
+    preview1.src = "imgs/" + dataProject[index]["preview"][0];
+    preview2.src = "imgs/" + dataProject[index]["preview"][1];
+    link.href = dataProject[index]["url"];
+    overlayDetail.style.display = "flex";
+    detailItem.style.animation = "500ms fadeIn forwards";
+  });
 });
 
 btnClose.addEventListener("click", () => {
-    detailItem.style.animation = "500ms fadeOut forwards";
-    setTimeout(() => {
-        overlayDetail.style.display = "none";
-    }, 500);
+  detailItem.style.animation = "500ms fadeOut forwards";
+  setTimeout(() => {
+    overlayDetail.style.display = "none";
+  }, 500);
 });
